@@ -375,3 +375,33 @@
     top: 205px;
   }
 }
+
+/* ------------ SOCIALS SECTION ------------ */
+@media (min-width: 662px) {
+  .socials-grid {
+    max-width: 662px;
+  }
+}
+
+@media (min-width: 880px) {
+  .socials-section__heading {
+    font-size: 3.5rem;
+  }
+
+  .follow-btn {
+    font-size: 1rem;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1006px) {
+  .socials-grid {
+    max-width: calc(40px + 966px);
+  }
+}
+
+@media (min-width: 1220px) {
+  .socials-grid {
+    max-width: var(--mx-width);
+  }
+}
