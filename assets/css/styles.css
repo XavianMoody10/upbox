@@ -1,0 +1,85 @@
+:root {
+  --fnt-1: "DM Sans", sans-serif;
+  --fnt-2: "DM Serif Display", serif;
+  --fnt-3: "DM Serif Text", serif;
+
+  /* Widths */
+  --mx-width: 1300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------ MOBILE HEADER ------------ */
+.mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.mobile-header__icon {
+  font-size: 2.5rem;
+}
+
+/* ------------ DESKTOP HEADER ------------ */
+.desktop-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.desktop-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  width: 95%;
+  max-width: var(--mx-width);
+  margin: 0 auto;
+}
+
+.navigation {
+  margin-left: auto;
+  margin-right: 45px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 45px;
+}
+
+.navigation-list__item {
+  list-style: none;
+}
+
+.navigation-list__anchor {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+  font-family: var(--fnt-1);
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.login-btn {
+  text-decoration: none;
+  font-size: 0.8rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 8px 30px;
+  font-family: var(--fnt-1);
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}

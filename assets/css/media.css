@@ -1,0 +1,33 @@
+:root {
+  --fnt-1: "DM Sans", sans-serif;
+  --fnt-2: "DM Serif Display", serif;
+  --fnt-3: "DM Serif Text", serif;
+
+  /* Widths */
+  --mx-width: 1300px;
+}
+
+/* ------------ MOBILE HEADER ------------ */
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+/* ------------ DESKTOP HEADER ------------ */
+@media (min-width: 992px) {
+  .desktop-header {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1150px) {
+  .navigation-list__anchor,
+  .login-btn {
+    font-size: 1rem;
+  }
+
+  .desktop-header__logo {
+    width: 210px;
+  }
+}
