@@ -1,5 +1,6 @@
 # upbox
 Upbox is a fully responsive landing page built using HTML, CSS, and Javascript
+
 ![upbox-thumbnail](https://github.com/XavianMoody10/upbox/assets/91290500/2b2f1c55-1af7-4e85-872d-ccdaa7e949fc)
 
 ## Why Make this project
