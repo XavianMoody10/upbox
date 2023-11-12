@@ -153,21 +153,21 @@
   animation-fill-mode: forwards;
 }
 
-.navigation {
+.desktop-navigation {
   margin-left: auto;
   margin-right: 45px;
 }
 
-.navigation-list {
+.desktop-navigation__list {
   display: flex;
   gap: 45px;
 }
 
-.navigation-list__item {
+.desktop-navigation__item {
   list-style: none;
 }
 
-.navigation-list__anchor {
+.desktop-navigation__anchor {
   text-decoration: none;
   font-size: 0.8rem;
   color: black;
@@ -176,8 +176,8 @@
   font-weight: 600;
 }
 
-.navigation-list__anchor:hover {
-  text-decoration: underline;
+.desktop-navigation__anchor:hover {
+  color: var(--pmr-color);
 }
 
 .login-btn {
@@ -190,6 +190,7 @@
   letter-spacing: 1.2px;
   font-weight: 600;
   transition-duration: 0.5s;
+  color: black;
 }
 
 .login-btn:hover {
@@ -578,6 +579,12 @@
   letter-spacing: 1.2px;
   text-decoration: none;
   color: black;
+}
+
+.links-group__anchor:hover,
+.social-list__anchor:hover,
+.footer-bottom__anchor:hover {
+  color: var(--pmr-color);
 }
 
 .links-group__item {

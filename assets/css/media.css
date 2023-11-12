@@ -13,12 +13,12 @@
 }
 
 @media (min-width: 1150px) {
-  .navigation-list__anchor,
+  .desktop-navigation__anchor,
   .login-btn {
     font-size: 1rem;
   }
 
-  .navigation-list {
+  .desktop-navigation__list {
     gap: 65px;
   }
 
