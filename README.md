@@ -1,2 +1,5 @@
 # upbox
-Landing page (No Framework)
+Upbox is a fully responsive landing page using HTML, CSS, and Javascript
+
+![upbox](https://github.com/XavianMoody10/upbox/assets/91290500/3c2770c2-32f4-446d-b698-2d70bfab0d08)
+
