@@ -16,6 +16,30 @@
   box-sizing: border-box;
 }
 
+@keyframes opacityIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes opacityInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* ------------ MOBILE HEADER ------------ */
 .mobile-header {
   display: flex;
@@ -31,6 +55,77 @@
 
 .mobile-header__icon {
   font-size: 2.5rem;
+}
+
+.mobile-header__icon,
+.mobile-header__logo {
+  position: relative;
+  z-index: 10;
+}
+
+.mobile-header__navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+}
+
+.mobile-header__navigation--open {
+  animation-name: navigationOpen;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navigationOpen {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.mobile-header__navigation--close {
+  animation-name: navigationClose;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navigationClose {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.mobile-navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.mobile-navigation__item {
+  list-style: none;
+}
+
+.mobile-navigation__anchor {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  font-family: var(--fnt-1);
+  letter-spacing: 1.2px;
+  font-weight: 600;
 }
 
 /* ------------ DESKTOP HEADER ------------ */
@@ -51,6 +146,11 @@
   width: 95%;
   max-width: var(--mx-width);
   margin: 0 auto;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation-name: opacityIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .navigation {
@@ -117,6 +217,12 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation-name: opacityIn;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .hero-intro__heading {
@@ -144,9 +250,14 @@
   background-color: white;
 }
 
-.hero__image--tablet,
 .hero__image--desktop {
   display: none;
+  opacity: 0;
+  transform: translateX(10px);
+  animation-name: opacityInLeft;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .hero__image--mobile {
@@ -251,6 +362,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.step--animate {
+  animation-name: opacityIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .step-images__group {
